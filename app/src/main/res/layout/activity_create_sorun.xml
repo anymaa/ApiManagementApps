@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.can.anyma.apimanagementapps.ui.CreateSorun">
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="368dp"
+            android:layout_height="495dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yeni Sorun"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="76dp">
+
+                <EditText
+                    android:id="@+id/Yetkili"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Yetkili" />
+            </android.support.design.widget.TextInputLayout>
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/Bolge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Bölge Seçiniz"
+                android:textColorHint="#05ab9a"
+                app:met_floatingLabel="normal" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/Aciklama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Açıklama" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageButton
+                android:id="@+id/Photo"
+                style="@android:style/Widget.Holo.Light.ImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                fab:srcCompat="@drawable/upload_area" />
+
+        </LinearLayout>
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/Post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_check_white_24dp"
+            fab:fab_colorNormal="#1E88E5"
+            fab:fab_colorPressed="#1565C0"
+            fab:menu_fab_size="normal"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+        </com.github.clans.fab.FloatingActionButton>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
